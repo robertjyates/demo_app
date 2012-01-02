@@ -17,6 +17,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# From http://stackoverflow.com/questions/7296683/rails-3-1-pushing-to-heroku-errors-installing-postgres-adapter
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
