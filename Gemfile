@@ -9,6 +9,7 @@ gem 'rails', '3.1.3'
 # From http://stackoverflow.com/questions/7296683/rails-3-1-pushing-to-heroku-errors-installing-postgres-adapter
 # http://devcenter.heroku.com/articles/how-do-i-use-sqlite3-for-development
 group :production do
+  gem 'therubyracer'
   gem 'pg'
 end
 group :development, :test do
